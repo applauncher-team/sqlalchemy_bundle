@@ -22,7 +22,7 @@ entity_manager:
 ```python
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
-from sqlalchemy_bundle.bundle import Base
+from sqlalchemy_bundle import Base
 
 class User(Base):
     __tablename__ = 'user'
@@ -44,7 +44,7 @@ for create schema and foreign keys
 
 ## Creating the schema
 ```python
-from sqlalchemy_bundle.bundle import EntityManager
+from sqlalchemy_bundle import EntityManager
 import inject
 
 em = inject.instance(EntityManager)
@@ -54,7 +54,7 @@ em.generate_schema()
 ## Querying the database
 
 ```python
-from sqlalchemy_bundle.bundle import EntityManager
+from sqlalchemy_bundle import EntityManager
 import inject
 
 em = inject.instance(EntityManager)
@@ -67,7 +67,7 @@ with em.s as session:
 or if you prefer the real session object
 
 ```python
-from sqlalchemy_bundle.bundle import EntityManager
+from sqlalchemy_bundle import EntityManager
 import inject
 
 em = inject.instance(EntityManager)

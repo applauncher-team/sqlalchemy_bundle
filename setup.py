@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name='sqlalchemy_bundle',
   packages=['sqlalchemy_bundle'],
-  version='1.02',
+  version='1.03',
   description='SqlAlchemy support for applauncher',
   author='Alvaro Garcia Gomez',
   author_email='maxpowel@gmail.com',
